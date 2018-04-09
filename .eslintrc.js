@@ -26,6 +26,8 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'semi': 0,
-    "quotes": 0 //引号类型 `` "" ''
+    "quotes": 0, //引号类型 `` "" ''
+    "space-before-function-paren": 0,
+    "no-multiple-empty-lines": [1, { "max": 10 }],//空行最多不能超过2行
   }
 }
