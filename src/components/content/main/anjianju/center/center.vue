@@ -1,11 +1,11 @@
 <template>
-  <div class="sign">
-    登录
+  <div class="center">
+    个人中心
   </div>
 </template>
 
 <script>
 export default {
-  name: "Sign"
-};
+  name: 'center'
+}
 </script>

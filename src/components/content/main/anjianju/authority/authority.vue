@@ -1,11 +1,11 @@
 <template>
-  <div class="sign">
-    登录
+  <div class="authority">
+    用户与权限管理
   </div>
 </template>
 
 <script>
 export default {
-  name: "Sign"
+  name: "authority"
 };
 </script>
