@@ -64,27 +64,34 @@ const anjianjuRoutes = [{
 }]
 
 // 菜单项(安委会)
-const anweihuiRoutes = []
+const anweihuiRoutes = [
+  {
+    path: '',
+    component: Main,
+    children: []
+  }
+]
 
 const defaultRoutes = {
   path: '/',
   redirect: '/index'
 }
-export const anjianju = [{
-  name: '首页', path: '/index'
-}, {
-  name: '企业信息', path: '/qiye'
-}, {
-  name: '危化', path: '/weihua'
-}, {
-  name: '系统管理',
-  path: '/sys-admin',
-  children: [
-    { name: '用户权限与管理', path: '/authority' },
-    { name: '可视化安监报警设置', path: '/moniter' },
-    { name: '个人中心', path: '/center' }
-  ]
-}]
+
+// 安监局菜单
+export const anjianju = [
+  { name: '首页', path: '/index' },
+  { name: '企业信息', path: '/qiye' },
+  { name: '危化', path: '/weihua' },
+  {
+    name: '系统管理',
+    path: '/sys-admin',
+    children: [
+      { name: '用户权限与管理', path: '/authority' },
+      { name: '可视化安监报警设置', path: '/moniter' },
+      { name: '个人中心', path: '/center' }
+    ]
+  }
+]
+
 export const anweihui = [...commonRoutes, ...anweihuiRoutes]; // 安委会左侧菜单生成元数据
-console.log(anjianju);
 export const routes = [defaultRoutes, signRouter, ...commonRoutes, ...anjianjuRoutes, ...anweihuiRoutes];

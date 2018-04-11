@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .content {
   display: flex;
   height: 100%;
@@ -34,7 +34,7 @@ export default {
   flex-direction: column;
 }
 .leftBar {
-  flex: 0 1 200px;
+  flex: 0 1 250px;
   height: 100%;
 }
 .topBar {
